@@ -20,7 +20,7 @@ public class Main_AnyEat extends AppCompatActivity {
         btn_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Main_AnyEat.this, MainActivity.class));
+                startActivity(new Intent(Main_AnyEat.this, LoginActivity.class));
             }
         });
     }
