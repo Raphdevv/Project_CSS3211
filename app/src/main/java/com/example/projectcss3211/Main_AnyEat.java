@@ -21,6 +21,12 @@ public class Main_AnyEat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Main_AnyEat.this, LoginActivity.class));
+                switch (view.getId()){
+                    case R.id.button_next:
+                        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                        break;
+                }
+                finish();
             }
         });
     }

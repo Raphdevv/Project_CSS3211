@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +19,7 @@ public class HomeFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private TextView greeting;
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
@@ -56,9 +59,12 @@ public class HomeFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        greeting = (TextView) view.findViewById(R.id.greeting_text);
+        String [] textGreeting = {"สวัสดี, ไม่รู้จะกินอะไรใช่ไหมกดปุ่มข้างดูสิ","อาหารเป็นสิ่งจำเป็นสำหรับคุณนะ ให้เราช่วยคิดเมณูสิ","หิวมากไหม ลองกดปุ่มข้างล่างสิ","ให้เราช่วยคุณนะ"};
+        int ranText = (int)(Math.random()*textGreeting.length-1)+0;
+        greeting.setText(textGreeting[ranText]);
+        return view;
     }
 }

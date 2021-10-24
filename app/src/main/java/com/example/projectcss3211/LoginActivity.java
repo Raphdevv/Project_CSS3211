@@ -30,9 +30,16 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(username.getText().toString().equals("raphaelx") && pass.getText().toString().equals("123456")){
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    switch (view.getId()){
+                        case R.id.button_log:
+                            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                            break;
+                    }
                     Toast toast=Toast.makeText(getApplicationContext(),"เข้าสู่ระบบสำเร็จ",Toast.LENGTH_SHORT);
                     toast.setMargin(50,50);
                     toast.show();
+                    finish();
+
                 }
                 else{
                     Toast toast=Toast.makeText(getApplicationContext(),"เข้าสู่ระบบไม่สำเร็จ",Toast.LENGTH_SHORT);
