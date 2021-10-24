@@ -17,4 +17,7 @@
     <style name="MyButtonStyle" parent="@android:style/Widget.Button">
         <item name="android:background">@color/black</item>
     </style>
+    <style name="roundimageview" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
