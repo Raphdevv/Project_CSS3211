@@ -39,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
                     toast.setMargin(50,50);
                     toast.show();
                     finish();
-
                 }
                 else{
                     Toast toast=Toast.makeText(getApplicationContext(),"เข้าสู่ระบบไม่สำเร็จ",Toast.LENGTH_SHORT);
