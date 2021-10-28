@@ -53,11 +53,12 @@
             <Button
                 android:id="@+id/button_next"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round_navigation_bar"
+                android:layout_height="48dp"
+                android:background="@drawable/btn_round"
                 android:elevation="30dp"
                 android:text="Next"
-                android:textColor="#1DE9B6" />
+                android:textColor="#1DE9B6"
+                app:cornerRadius="90dp" />
         </LinearLayout>
 
     </LinearLayout>

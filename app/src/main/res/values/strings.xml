@@ -2,4 +2,22 @@
     <string name="app_name">Project CSS3211</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="menu_food">
+        <item>ต้มยำกุ้ง</item>
+        <item>แกงส้มผักรวม</item>
+        <item>แกงเขียวหวาน</item>
+        <item>พะแนงไก่</item>
+        <item>แกงมัสมั่น</item>
+        <item>ไก่ผัดผงกะหรี่</item>
+    </string-array>
+    
+    <string-array name="discription">
+        <item>This is a discription.</item>
+        <item>This is a discription.</item>
+        <item>This is a discription.</item>
+        <item>This is a discription.</item>
+        <item>This is a discription.</item>
+        <item>This is a discription.</item>
+    </string-array>
 </resources>

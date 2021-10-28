@@ -83,7 +83,7 @@
                     android:layout_width="320dp"
                     android:layout_height="60dp"
                     android:layout_marginBottom="10dp"
-                    android:backgroundTint="#000000"
+                    android:backgroundTint="@color/material_on_background_emphasis_medium"
                     android:text="Log in"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
