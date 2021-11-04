@@ -1,6 +1,7 @@
 package com.example.projectcss3211;
 import android.content.Context;
 import android.os.Build;
+import android.view.View;
 
 import androidx.annotation.RequiresApi;
 
@@ -17,12 +18,14 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class JSONFood {
+    View view;
     private static Context context;
     ArrayList<String> ingredientTags = new ArrayList<String>();
     ArrayList<String> cuisineTags = new ArrayList<String>();
-    public static int dishes = 27638;
+    public static int count = 5;
 
     public JSONFood() {
+
     }
 
 }
