@@ -26,9 +26,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_row, parent, false);
-        return new MyViewHolder(view);
+        return new MyViewHolder(
+                LayoutInflater.from(parent.getContext()).inflate(
+                        R.layout.item_quiz,
+                        parent,
+                        false
+                )
+        );
     }
 
     @Override

@@ -9,9 +9,9 @@
     tools:context=".HomeFragment">
 
     <ScrollView
+        android:id="@+id/contentHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
 
 
         <RelativeLayout
@@ -115,10 +115,10 @@
                 android:layout_height="200dp"
                 android:layout_below="@+id/cuisine_card"
                 android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
                 android:backgroundTint="#FFE600"
                 android:clickable="true"
                 android:outlineSpotShadowColor="#FFE600"
-                android:layout_marginTop="32dp"
                 android:viewportWidth="320"
                 android:viewportHeight="200"
                 app:cardCornerRadius="30dp"

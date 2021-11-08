@@ -69,8 +69,8 @@
                 android:hint="Email"
                 android:inputType="textEmailAddress"
                 android:paddingLeft="10dp"
-                android:textColor="#00FFD1"
-                android:textColorHint="#00FFD1" />
+                android:textColor="@color/black"
+                android:textColorHint="#6E6E6E" />
 
             <EditText
                 android:id="@+id/password_text"
@@ -85,8 +85,8 @@
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:paddingLeft="10dp"
-                android:textColor="#00FFD1"
-                android:textColorHint="#00FFD1" />
+                android:textColor="@color/black"
+                android:textColorHint="#6E6E6E" />
 
         </LinearLayout>
 

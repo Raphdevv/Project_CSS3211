@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoadActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/contentload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/load1"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="31.5dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/loadfood"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:layout_below="@+id/load1"
+            android:src="@drawable/loadfood2" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView15"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/cardview_light_background"
+            android:elevation="15dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:cornerRadius="31.5dp" />
+    </RelativeLayout>
+</FrameLayout>

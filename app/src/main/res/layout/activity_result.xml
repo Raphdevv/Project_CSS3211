@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/resultShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="43dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="31.5dp">
+
+            <ImageView
+                android:id="@+id/imgResultfinal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/a"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:outlineSpotShadowColor="#00E2BA"
+            app:cardBackgroundColor="#00E2BA"
+            app:cardCornerRadius="31.5dp"
+            app:cardElevation="25dp" >
+
+            <TextView
+                android:id="@+id/textResultfinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:textSize="30dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/moreResult"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/a"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:elevation="25dp"
+            android:outlineSpotShadowColor="#00E2BA"
+            android:text="More"
+            android:textAllCaps="false"
+            android:textColor="#00E2BA"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:cornerRadius="31.5dp" />
+
+        <Button
+            android:id="@+id/backtomain"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/moreResult"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:elevation="15dp"
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:cornerRadius="31.5dp" />
+    </RelativeLayout>
+</FrameLayout>

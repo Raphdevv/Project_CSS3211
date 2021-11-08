@@ -119,7 +119,7 @@ public class RegisterActivity extends AppCompatActivity {
                                     Log.d("TAG","onFailure "+e.toString());
                                 }
                             });
-                            startActivity(new Intent(RegisterActivity.this,MainActivity.class));
+                            startActivity(new Intent(RegisterActivity.this,SelectFoodActivity.class));
                             switch (view.getId()){
                                 case R.id.buttonSign:
                                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);

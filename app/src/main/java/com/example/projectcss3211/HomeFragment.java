@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
@@ -35,6 +36,8 @@ public class HomeFragment extends Fragment {
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+
+    ScrollView scrollView;
 
     private CardView searchCard,cuisineCard,resCard;
     private RelativeLayout rest_layout;
@@ -69,6 +72,7 @@ public class HomeFragment extends Fragment {
         searchCard = (CardView) view.findViewById(R.id.search_card);
         cuisineCard = (CardView) view.findViewById(R.id.cuisine_card);
         resCard = (CardView) view.findViewById(R.id.res_card);
+        scrollView = (ScrollView) view.findViewById(R.id.contentHome);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
@@ -76,6 +80,8 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 YoYo.with(Techniques.Pulse).duration(400).repeat(0).playOn(searchCard);
+                startActivity(new Intent(getContext(),FindOutActivity.class));
+
             }
         });
 

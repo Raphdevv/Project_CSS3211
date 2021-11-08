@@ -34,7 +34,6 @@ public class ProfileFragment extends Fragment {
     private FirebaseFirestore fStore;
     private String userID;
 
-    CardView signout;
     TextView username_show;
     Button btn_logout;
 
@@ -57,15 +56,15 @@ public class ProfileFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-        signout = (CardView) view.findViewById(R.id.btn_logoutus);
+        btn_logout = (Button) view.findViewById(R.id.signout);
         username_show = (TextView) view.findViewById(R.id.username_show);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        signout.setOnClickListener(new View.OnClickListener() {
+        btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                YoYo.with(Techniques.Pulse).duration(400).repeat(0).playOn(signout);
+                YoYo.with(Techniques.Pulse).duration(400).repeat(0).playOn(btn_logout);
                 Log.d("TAG","onClick: attempting to sign out the user.");
                 FirebaseAuth.getInstance().signOut();
                 Toast.makeText(getActivity(), "Signed out", Toast.LENGTH_SHORT).show();
