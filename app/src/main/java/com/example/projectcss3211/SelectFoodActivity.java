@@ -319,7 +319,7 @@ public class SelectFoodActivity extends AppCompatActivity {
 
     protected String setTakeQuiz(){
         int i;
-        i = (int) (Math.random()*100)+1;
+        i = (int) (Math.random()*767);
         return String.valueOf(i);
     }
 }

@@ -104,13 +104,20 @@ public class MainActivity extends AppCompatActivity {
 
 //        public void setJsonFood () {
 //            String json=null;
-//            for (int j = 1; j <= 100; j++) {
+//            for (int j = 744; j <= 15000; j++) {
 //                String files = null;
 //                if ((j <= 10))
 //                    files = "meta0000"+j+".json";
 //                else if (j <= 99)
 //                    files = "meta000"+j+".json";
-//                else files = "meta00"+j+".json";
+//                else if (j <= 999)
+//                    files = "meta00" + j + ".json";
+//                else if (j <= 9999)
+//                    files = "meta0" + j + ".json";
+//                else {
+//                    files = "meta" + j + ".json";
+//                }
+//
 //                try {
 //                    InputStream inputStream = getAssets().open(files);
 //                    int size = inputStream.available();
